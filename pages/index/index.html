@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 让ie有更好的渲染效果 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 开启国产浏览器的高速模式(webkit内核) -->
+    <meta name="renderer" content="webkit">
+    <!-- <link rel="icon" href="./icons/favicon.ico"> -->
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <style id="theme-variable"></style>
+    <!--[if lte IE 8]> <script src="./utils/respond.min.js"></script> <![endif]-->
+    <script src="./utils/default.js"></script>
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but this page doesn't work properly without JavaScript enabled.
+            Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+        <div class="nav">
+            <div class="container clear">
+                <div class="nav-left fl">
+                    <img src="./icons/logo-header.png" class="nav-logo" alt="logo">
+                    <ul class="nav-ul">
+                        <li class="nav-li active"><a href="index.html">首页</a></li>
+                        <li class="nav-li"><a href="course.html">课程专区</a></li>
+                        <li class="nav-li"><a href="comment.html">讨论专区</a></li>
+                        <li class="nav-li"><a href="member.html">个人中心</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right fr clear">
+                    <div class="login fr">
+                        <a href="login.html">登录</a><a href="register.html">注册</a>
+                    </div>
+                    <div class="fr">
+                        <div class="search clear">
+                            <input type="text" class="search-input fl" placeholder="搜索感兴趣的课程">
+                            <div class="search-btn fl"><img src="./icons/icon-search.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container content">
+            <div class="app-content-banner swiper-container rela" id="index-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container"><img src="./images/banner.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container"><img src="./images/banner.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container"><img src="./images/banner.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- 分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="mt15 tags">
+                <div class="tag-title">栏目分类：</div>
+                <ul class="inb tag-ul">
+                    <li class="active">全部</li>
+                    <li>逻辑学</li>
+                    <li>刑侦分析</li>
+                    <li>大数据</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./utils/idangerous.swiper.min.js"></script>
+</body>
+
+</html>

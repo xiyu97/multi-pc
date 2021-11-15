@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 让ie有更好的渲染效果 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 开启国产浏览器的高速模式(webkit内核) -->
+    <meta name="renderer" content="webkit">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_1454899_pqhvobved2o.eot?t=1570865680252');
+            /* IE9 */
+            src: url('//at.alicdn.com/t/font_1454899_pqhvobved2o.eot?t=1570865680252#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAT8AAsAAAAACUgAAASuAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqFZIUzATYCJAMUCwwABCAFhG0HSRtACMiemjxBBLYhgggUANApWzz8/37f9rn3PBnT5qh20TaLpJomgbdfSRAiqUGpdJNGfj+PZ75/7QHYlkkHuzkhqtOlGSAHE5AAAbkJuMd/cKma6Qtknr3FZY7JiYXCEQzYmKvdoNWWCsYF6TB2cRmbCYxb1Q06n5lfDjaS1isQ2xqmCWxiWllCDL2izZmY4j1Y6stbiwsA3rk/H78hNBuKptIGXn6SQULyN3hOK4b8p9bWw8j+zGCmUXEQSOJprnWbwo8epDAuhZVOA/l3vaJ8g2czn817Tv8fAMIVycd1K2U1f3iVaGnSSYg/HUu+gYlQ+DYTIfg2DyH5TmtViG26j6PHF4B4AfA7PzmkIrYcHSen1udDDOMkXJJkuax8tuy5Wa5YI7SYudNTNXOBz4wZZ9qp8DkL1+7suLpj3Or2Ow/6eMzAR6zwOiLgB0VZvu6/XZK6nL3YQpZwUVSJAggzuCxXRAgOs+wmEI6iSnhSXrNeRkOlxswUQSiXJJWZdgsfKodVJUrH644I5SCKKcYQ+/FynCDg0jNcfl5hn5+2T7IbJ/Sobhak2KatJAnfL6tEscZe1tT24wcMAUyPRBiR5Tg40469kBFyxQYBc1wsHdq3a5eX14z+R8XgZX/WJ0zEcm2PdtyLr11ptYRJRpqBo5NT0MvcnqGPZz1IU3B119teiP1qoytqP3v/5fuEsOhn7uk2UFbRm138Q8/GwEyraaRPjWt557N/zdXcgRihnPzdurHkRGHS7K6rn6PtkHVkau3Afk2LowF9mvo389pFuh9MjKej0nssW+JQi8boFrTp0BoHIuUWrSTrK1rWO7dLVOeGmbNQoVpdiHSWXYMKw4P/bpj690DLT571REbrgd+vaFqlDSgpgvbwD9NCJ6IyH4PlLDQtKmtBaW0U0+puXur+VFJ51dFl1XqU8iaG3VRa3IGNZzIS7zKtomoXlJrUwF0/VpRFdl3sb9PsPeACmqyzbJYvsol/AbJrSU7lSegwsrkUPLzUrCufFqwacaVPoilOO1U/PCmutiGwj2s/R67DhBuJCzqfhuIVXefxZ4CNcUOP9ola2iZ3pC7PLavr5XfMkS35FpO6mXIrVNAHGB4Gp0W9D8MS1ZFLLoGo3rwFIfi3a9H7Buf4/zb2CT6fXu4C2O3R/a0jgK9Fpjbvs1InKkH9E8oCTdukmDOciJDXxqexJXL74X1BygE7591D8qXa+YTeUghFZwWq3k504g9CY8JJaPVOwbgDsqZPWMBRiBzDfiMBhFmboZj2EapZF9GJvwuNZW+hNZsCxl0J9wUn7E5jl8ZRTTxFYs19MQ3BGmnDwNt5haUU01PfxEUFLgWnOLMmgIUEBicTWZSR4voYYu7FhPI8jdEca8AywXaUXs9iJo7VUgQfqOZ5U2xQEJ33QoEEawA753AoTXgUEqZZXxgNAsuItuvz7FLfX4rC6EmvCVdSVmLGUThmmsYxIQIF10BnSY21ys6luVkvjFA8Ho270TgsA0wmNFP0epSFMeW306IQeIHULcImsYJQNbquNHB8ueEa8/7pitqyTZSokdFEq3ui4Sia7WNFqHfZTVmypv1HKT0MBQAAAA==') format('woff2'),
+                url('//at.alicdn.com/t/font_1454899_pqhvobved2o.woff?t=1570865680252') format('woff'),
+                url('//at.alicdn.com/t/font_1454899_pqhvobved2o.ttf?t=1570865680252') format('truetype'),
+                /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+                url('//at.alicdn.com/t/font_1454899_pqhvobved2o.svg?t=1570865680252#iconfont') format('svg');
+            /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-firefox:before {
+            content: "\e695";
+        }
+
+        .icon-chrome:before {
+            content: "\e600";
+        }
+
+        .icon-opera:before {
+            content: "\e766";
+        }
+
+        .icon-edge:before {
+            content: "\e69a";
+        }
+
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        ins,
+        a {
+            text-decoration: none;
+        }
+
+        a:focus,
+        *:focus {
+            outline: none;
+        }
+
+        .b-content {
+            width: 400px;
+            margin: 250px auto 60px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .pic-box {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pic-box img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .pic-box p {
+            line-height: 20px;
+            font-size: 12px;
+        }
+
+        .text-box .title {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .text-box .list {
+            height: 90px;
+        }
+
+        .text-box .list li a {
+            float: left;
+            width: 100px;
+            text-align: center;
+            line-height: 24px;
+            color: #666;
+        }
+
+        .text-box .list li .iconfont {
+            font-size: 30px;
+        }
+
+        .text-box .list li a span {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b-content">
+        <div class="pic-box">
+            <!-- <img src="https://i0.hdslb.com/bfs/static/manga/pc/img/563540f812849.png"> -->
+            <p>为了保障你的账号安全和最佳预览体验，当前业务已不支持IE9及以下浏览器和部分古老浏览器的访问，邀请您使用以下现代高级浏览器。</p>
+        </div>
+        <div class="text-box">
+            <div class="title">以下四款官方正版浏览器任君挑选</div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="https://www.google.cn/intl/zh-CN/chrome" target="_blank">
+                            <i class="iconfont icon-chrome"></i><br>
+                            Chrome<br>
+                            <span>谷歌<span style="color: #f40;">（推荐）</span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/zh-CN/firefox/new" target="_blank">
+                            <i class="iconfont icon-firefox"></i><br>
+                            Firefox<br>
+                            <span>火狐</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.microsoftedgeinsider.com" target="_blank">
+                            <i class="iconfont icon-edge"></i><br>
+                            Edge<br>
+                            <span>微软</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.opera.com/zh-cn" target="_blank">
+                            <i class="iconfont icon-opera"></i><br>
+                            Opera<br>
+                            <span>欧朋</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+#app{
+    .nav{
+        height: 64px;
+        line-height: 64px;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+        margin-bottom: 16px;
+        .nav-left{
+            .nav-logo{
+                height: 36px;
+            }
+            .nav-ul{
+                display: inline-block;
+                margin-left: 51px;
+                font-size: 16px;
+                li{
+                    width: 88px;
+                    text-align: center;
+                    a{
+                        display: block;
+                    }
+                    &.active,
+                    &:hover{
+                        background-color: $bg-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .nav-right{
+            .login{
+                margin-left: 33px;
+                @media screen and (max-width: 1199px){
+                    margin-left: 10px;
+                }
+                a{
+                    padding: 0 10px;
+                    line-height: 16px;
+                    display: inline-block;
+                    &:hover{
+                        color: $text-color;
+                    }
+                    &:last-child{
+                        border-left: 1px solid #666;
+                    }
+                }
+            }
+            .search{
+                display: inline-block;
+                vertical-align: middle;
+                .search-input{
+                    padding: 0 25px 0 15px;
+                    height: 36px;
+                    line-height: 30px;
+                    border-top-left-radius: 100px;
+                    border-bottom-left-radius: 100px;
+                    border-top: 1px solid $text-color;
+                    border-bottom: 1px solid $text-color;
+                    border-left: 1px solid $text-color;
+                    width: 190px;
+                    @media screen and (max-width: 1199px){
+                        width: 160px;
+                    }
+                }
+                .search-btn{
+                    margin-left: -20px;
+                    height: 36px;
+                    line-height: 32px;
+                    border-radius: 100px;
+                    background-color: $bg-color;
+                    border-top: 1px solid $text-color;
+                    border-bottom: 1px solid $text-color;
+                    border-right: 1px solid $text-color;
+                    width: 54px;
+                    text-align: center;
+                    img{
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .content{
+        #index-swiper{
+            overflow: hidden;
+            .swiper-slide{
+                img{
+                    width: 100%;
+                    min-height: 360px;
+                }
+            }
+        }
+    }
+}
